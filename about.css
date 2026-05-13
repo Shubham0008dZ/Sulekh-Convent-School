@@ -1,0 +1,239 @@
+/* ============================================
+   ABOUT.CSS - About School page styles
+   ============================================ */
+
+/* ---- INNER LAYOUT (sidebar + main) ---- */
+.inner-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* ---- SIDEBAR ---- */
+.inner-sidebar { position: sticky; top: 90px; }
+
+.sidebar-nav {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  border: 1px solid var(--gray-light);
+}
+
+.sidebar-heading {
+  background: var(--blue-dark);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 16px;
+  padding: 14px 20px;
+}
+
+.sidebar-nav ul { padding: 8px 0; }
+
+.sidebar-link {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: var(--gray-dark);
+  border-left: 3px solid transparent;
+  transition: var(--transition);
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  color: var(--blue-dark);
+  border-left-color: var(--red);
+  background: var(--off-white);
+  padding-left: 24px;
+}
+
+/* ---- CONTENT SECTIONS ---- */
+.about-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.about-section-text p {
+  color: var(--gray-dark);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.inner-img-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--gray-light);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+  font-size: 13px;
+  border: 2px dashed var(--gray);
+}
+
+.small-img { aspect-ratio: 3/2; }
+
+.vision-img { background: linear-gradient(135deg, #e8f0ff, #c8d8f8); }
+.mission-img { background: linear-gradient(135deg, #ffe8e8, #f8c8c8); }
+
+/* ---- VALUES LIST ---- */
+.values-list li {
+  font-size: 15px;
+  color: var(--gray-dark);
+  padding: 8px 0 8px 20px;
+  border-bottom: 1px solid var(--gray-light);
+}
+.values-list li:last-child { border-bottom: none; }
+
+/* ---- POLICY BLOCKS ---- */
+.policy-block {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--gray-light);
+}
+.policy-block:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.policy-block p { font-size: 14px; color: var(--gray-dark); line-height: 1.8; }
+
+/* ---- TRAIL BLAZERS ---- */
+.trailblazers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.trailblazer-card {
+  text-align: center;
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  padding: 24px 16px;
+  border: 1px solid var(--gray-light);
+  transition: var(--transition);
+}
+.trailblazer-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+
+.tb-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 16px;
+  border: 4px solid var(--blue-dark);
+}
+
+.tb-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.tb-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--blue-dark);
+  margin-bottom: 6px;
+}
+
+.tb-role {
+  font-size: 12px;
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+/* ---- SALIENT BLOCKS ---- */
+.salient-block {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-light);
+}
+.salient-block:last-child { border-bottom: none; }
+.salient-block p { font-size: 14px; color: var(--gray-dark); line-height: 1.8; }
+
+.salient-grid {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 20px;
+  align-items: start;
+  margin-top: 12px;
+}
+
+.salient-img-wrap .inner-img-placeholder { aspect-ratio: 1; }
+
+/* ---- MESSAGES ---- */
+.message-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.msg-avatar-wrap { text-align: center; }
+
+.msg-avatar-placeholder {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  border: 4px solid var(--blue-dark);
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.msg-person-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--red);
+}
+
+.msg-person-role {
+  font-size: 12px;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.msg-text p {
+  font-size: 14px;
+  color: var(--gray-dark);
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* ---- SCROLL ANIMATION ---- */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.animate-on-scroll.animate-in { opacity: 1; transform: translateY(0); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1024px) {
+  .inner-layout { grid-template-columns: 1fr; }
+  .inner-sidebar { position: static; }
+  .trailblazers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .about-section-grid { grid-template-columns: 1fr; }
+  .salient-grid { grid-template-columns: 1fr; }
+  .message-layout { grid-template-columns: 1fr; }
+  .msg-avatar-wrap { display: flex; align-items: center; gap: 16px; }
+  .msg-avatar-placeholder { width: 80px; height: 80px; margin: 0; }
+}
+
+@media (max-width: 480px) {
+  .trailblazers-grid { grid-template-columns: 1fr; }
+}
