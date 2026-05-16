@@ -41,126 +41,14 @@
           <div class="content-box animate-on-scroll" id="images">
             <div class="content-box-header">Image Gallery</div>
             <div class="content-box-body">
-              <!-- CMS: Gallery albums — each item has title, thumbnail, link -->
+              <!-- All loaded from Google Sheets via gallery.js -->
               <div class="gallery-albums-grid" id="galleryAlbumsGrid">
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Assembly Day</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn" onclick="openAlbum('assembly')">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>A Promising Start: First Assembly of the Session</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Cricket Tournament</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn" onclick="openAlbum('cricket')">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Under-10 Cricket Tournament – Proud Achievement (Classes 3rd to 4th)</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Taekwondo</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Taekwondo Tournament – Proud Moment for School</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Children's Day</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Children's Day Celebration 2025</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Sports Achievement</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Sports Achievement</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Annual Day</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Annual Day Celebration</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Sports Day</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Sports Day</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Hawan & Farewell</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Hawan &amp; Farewell</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
-                <div class="album-card animate-on-scroll">
-                  <div class="album-thumb">
-                    <div class="album-thumb-placeholder"><span>Investiture Ceremony</span></div>
-                    <div class="album-overlay">
-                      <button class="album-view-btn">View Gallery</button>
-                    </div>
-                  </div>
-                  <div class="album-info">
-                    <h4>Investiture Ceremony</h4>
-                    <a href="#" class="album-link">+ View Gallery</a>
-                  </div>
-                </div>
-
+                <div class="album-card skeleton" style="min-height:220px;"></div>
+                <div class="album-card skeleton" style="min-height:220px;"></div>
+                <div class="album-card skeleton" style="min-height:220px;"></div>
+              </div>
+              <div class="empty-state" id="albumsEmpty" style="display:none;">
+                No albums added yet. Add albums via CMS → Image Gallery.
               </div>
             </div>
           </div>
@@ -169,81 +57,14 @@
           <div class="content-box animate-on-scroll" id="videos">
             <div class="content-box-header">Video Gallery</div>
             <div class="content-box-body">
-              <!-- CMS: Video items — YouTube embed URLs stored in CMS -->
+              <!-- All loaded from Google Sheets via gallery.js -->
               <div class="videos-grid" id="videosGrid">
-
-                <div class="video-card animate-on-scroll">
-                  <div class="video-thumb" onclick="playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="video-thumb-placeholder">
-                      <div class="play-btn">
-                        <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                      </div>
-                      <span>Educational Trip</span>
-                    </div>
-                  </div>
-                  <p class="video-title">Educational Trip: Students taken on an exciting educational visit to Arun Jaitley Stadium</p>
-                </div>
-
-                <div class="video-card animate-on-scroll">
-                  <div class="video-thumb" onclick="playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="video-thumb-placeholder">
-                      <div class="play-btn">
-                        <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                      </div>
-                      <span>Investiture Ceremony</span>
-                    </div>
-                  </div>
-                  <p class="video-title">Voting for Investiture Ceremony Junior Council (2023-24)</p>
-                </div>
-
-                <div class="video-card animate-on-scroll">
-                  <div class="video-thumb" onclick="playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="video-thumb-placeholder">
-                      <div class="play-btn">
-                        <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                      </div>
-                      <span>Glory Moment</span>
-                    </div>
-                  </div>
-                  <p class="video-title">A Moment of Glory and Pride to the Entire School Fraternity</p>
-                </div>
-
-                <div class="video-card animate-on-scroll">
-                  <div class="video-thumb" onclick="playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="video-thumb-placeholder">
-                      <div class="play-btn">
-                        <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                      </div>
-                      <span>Veer Gatha</span>
-                    </div>
-                  </div>
-                  <p class="video-title">Veer Gatha — School Participation</p>
-                </div>
-
-                <div class="video-card animate-on-scroll">
-                  <div class="video-thumb" onclick="playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="video-thumb-placeholder">
-                      <div class="play-btn">
-                        <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                      </div>
-                      <span>Dance Performance</span>
-                    </div>
-                  </div>
-                  <p class="video-title">Dance Performance by Students</p>
-                </div>
-
-                <div class="video-card animate-on-scroll">
-                  <div class="video-thumb" onclick="playVideo(this, 'https://www.youtube.com/embed/dQw4w9WgXcQ')">
-                    <div class="video-thumb-placeholder">
-                      <div class="play-btn">
-                        <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                      </div>
-                      <span>Independence Day</span>
-                    </div>
-                  </div>
-                  <p class="video-title">Independence Day Celebration</p>
-                </div>
-
+                <div class="video-card skeleton" style="min-height:180px;"></div>
+                <div class="video-card skeleton" style="min-height:180px;"></div>
+                <div class="video-card skeleton" style="min-height:180px;"></div>
+              </div>
+              <div class="empty-state" id="videosEmpty" style="display:none;">
+                No videos added yet. Add videos via CMS → Video Gallery.
               </div>
             </div>
           </div>
@@ -255,13 +76,15 @@
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
     <div class="lightbox-content" id="lightboxContent"></div>
   </div>
 
   <div id="footer-placeholder"></div>
   <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="18 15 12 9 6 15"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
   </button>
 
   <script src="cms-config.js"></script>
@@ -270,3 +93,5 @@
   <script src="gallery.js"></script>
 </body>
 </html>
+
+
