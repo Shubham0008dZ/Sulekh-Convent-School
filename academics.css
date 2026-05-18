@@ -1,0 +1,51 @@
+/* ============================================
+   ACADEMICS.CSS
+   ============================================ */
+
+.dept-motto {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--blue-dark);
+  font-style: italic;
+  border-left: 4px solid var(--gold);
+  padding-left: 16px;
+}
+
+.result-placeholder {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--off-white);
+  border-radius: var(--radius);
+  border: 2px dashed var(--gray-light);
+}
+
+.result-placeholder p {
+  color: var(--gray-dark);
+  margin-top: 14px;
+  font-size: 15px;
+}
+
+.homework-list { display: flex; flex-direction: column; gap: 10px; }
+
+.hw-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--off-white);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-light);
+  transition: var(--transition);
+}
+
+.hw-item:hover { background: var(--blue-dark); border-color: var(--blue-dark); }
+.hw-item:hover a, .hw-item:hover svg { color: var(--white); }
+
+.hw-item svg { color: var(--blue-mid); flex-shrink: 0; }
+
+.hw-item a {
+  color: var(--blue-mid);
+  font-size: 14px;
+  font-weight: 600;
+  transition: var(--transition);
+}

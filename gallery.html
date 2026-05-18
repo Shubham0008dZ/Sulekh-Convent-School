@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Sulekh Convent Public School</title>
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+  <div id="navbar-placeholder"></div>
+
+  <div class="page-banner">
+    <div class="page-banner-content">
+      <h1>Gallery</h1>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a><span>›</span><span>Gallery</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="inner-layout">
+
+        <aside class="inner-sidebar">
+          <nav class="sidebar-nav">
+            <h3 class="sidebar-heading">Gallery</h3>
+            <ul>
+              <li><a href="#images" class="sidebar-link">Image Gallery</a></li>
+              <li><a href="#videos" class="sidebar-link">Video Gallery</a></li>
+            </ul>
+          </nav>
+        </aside>
+
+        <main class="inner-main">
+
+          <!-- IMAGE GALLERY -->
+          <div class="content-box animate-on-scroll" id="images">
+            <div class="content-box-header">Image Gallery</div>
+            <div class="content-box-body">
+              <!-- All loaded from Google Sheets via gallery.js -->
+              <div class="gallery-albums-grid" id="galleryAlbumsGrid">
+                <div class="album-card skeleton" style="min-height:220px;"></div>
+                <div class="album-card skeleton" style="min-height:220px;"></div>
+                <div class="album-card skeleton" style="min-height:220px;"></div>
+              </div>
+              <div class="empty-state" id="albumsEmpty" style="display:none;">
+                No albums added yet. Add albums via CMS → Image Gallery.
+              </div>
+            </div>
+          </div>
+
+          <!-- VIDEO GALLERY -->
+          <div class="content-box animate-on-scroll" id="videos">
+            <div class="content-box-header">Video Gallery</div>
+            <div class="content-box-body">
+              <!-- All loaded from Google Sheets via gallery.js -->
+              <div class="videos-grid" id="videosGrid">
+                <div class="video-card skeleton" style="min-height:180px;"></div>
+                <div class="video-card skeleton" style="min-height:180px;"></div>
+                <div class="video-card skeleton" style="min-height:180px;"></div>
+              </div>
+              <div class="empty-state" id="videosEmpty" style="display:none;">
+                No videos added yet. Add videos via CMS → Video Gallery.
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="cms-config.js"></script>
+  <script src="common.js"></script>
+  <script src="about.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
